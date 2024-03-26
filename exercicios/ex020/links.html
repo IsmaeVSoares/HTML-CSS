@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalizando Links</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        color: red;
+        text-decoration: none;
+      }
+      a:visited {
+        color: darkred;
+      }
+      a:hover {
+        color: rgb(93, 0, 255);
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+      }
+      .expecial::after {
+        content: " ⇐ ";
+      }
+      .expecial::before {
+        content: " ⇒ ";
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/ismael14_/?hl=pt-br" target="_blank" class="expecial"
+          >Meu Instagram</a>
+      </li>
+      <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+      <li>
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="expecial">Meu Endereço de Email</a>
+</li>
+    </ul>
+  </body>
+</html>
